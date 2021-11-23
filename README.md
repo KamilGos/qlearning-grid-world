@@ -87,7 +87,7 @@ Inside 'data' folder you can find three prepared, ready world. Hovever you can c
 
 
 
-The graphical representation of these worlds is shown in picture below. White colour means that the considered state is **normal**. Colour black was used **forbidden** states, the colour green was used for **terminal** states, yellow for **special** states and blue for start state. The figures also indicate the numbering of coordinates that is used in the program output. 
+The graphical representation of these worlds is shown in picture below. White colour means that the considered state is **normal**. Colour black was used **forbidden** states, the colour green was used for **terminal** states, yellow for **special** states and blue for start state. The figures also indicate the numbering of coordinates that is used in the program output. The 0.0 utility in green state means that this is terminal state. 
 
 <div align="center" id="put_id"> 
   <img src=images/world1_graph.png width="250" />
