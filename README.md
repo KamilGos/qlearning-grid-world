@@ -74,13 +74,13 @@ optional arguments:
 # Example of usage:
 
 # Run q-learning for world1 and 100000 iterations
-$ python main.py world1.txt -q -qi 100000  
+$ python main.py data/world1.txt -q -qi 100000  
 
 # Run q-learning for world1 and 100000 iterations and show the results graphically
-$ python main.py world1.txt -q -qi 100000 -sh
+$ python main.py data/world1.txt -q -qi 100000 -sh
 
 # Show the results graphically and save them to "figures" file
-$ python main.py world0.txt -q -qi 100000 -sh -s -sfn figures
+$ python main.py data/world0.txt -q -qi 100000 -sh -s -sfn figures
 ```
 
 https://user-images.githubusercontent.com/44849247/143001869-749deca0-72a3-49f9-8f09-6aa5a23c3c3f.mp4
