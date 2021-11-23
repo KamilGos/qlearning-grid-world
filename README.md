@@ -27,6 +27,16 @@
 
 <br>
 
+---
+
+<center>
+
+You can find the implementation of Markov Decision Process using grid-world environment here: [github.com/KamilGos/markov-decision-process-grid-world](https://github.com/KamilGos/markov-decision-process-grid-world)
+
+</center>
+
+---
+
 
 ## :dart: About ##
 Project is an implementation of reinforcement learning algorithm, named Q-Learning using "Grid World". 
@@ -47,8 +57,6 @@ $ cd qlearning-grid-world
 
 # Run the project
 usage: main.py [-h] [-q] [-qi QITER] [-sh] [-s] [-sfn SAVE_FILENAME] world_filename
-
-Implementation of Q-learning algorithmusing GridWorld environment. Use -h for more informations.
 
 positional arguments:
   world_filename        Chosen world filename. Eg. "world1.txt"
@@ -81,11 +89,13 @@ https://user-images.githubusercontent.com/44849247/143001869-749deca0-72a3-49f9-
 <h2>Grid World</h2>
 Inside 'data' folder you can find three prepared, ready world. Hovever you can create your own world using the following file structure:
 
+<div align="center">
+
 | Structure   | Exampple    |
 |--------------- | --------------- |
 |   <img src=images/world_structure.png width="600" />  |   <img src=images/world1_structure.png width="100" /> |
 
-
+</div>
 
 The graphical representation of these worlds is shown in picture below. White colour means that the considered state is **normal**. Colour black was used **forbidden** states, the colour green was used for **terminal** states, yellow for **special** states and blue for start state. The figures also indicate the numbering of coordinates that is used in the program output. The 0.0 utility in green state means that this is terminal state. 
 
