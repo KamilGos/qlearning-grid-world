@@ -10,6 +10,13 @@ Optional arguments: <br>
 <b>-q</b> -> Run the q-learning algorithm and print the result as standard output <br>
 <b>-qi</b> -> Change the number of iterations (default: 10000) <br>
 <b>-sh</b> -> show the results as figures <br>
+
+
+https://user-images.githubusercontent.com/44849247/143001869-749deca0-72a3-49f9-8f09-6aa5a23c3c3f.mp4
+
+
+
+
 <b>-s</b> -> save the results to tmp.* file <br>
 <b>-sfn</b> -> change the filename for saved files <br>
 
