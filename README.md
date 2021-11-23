@@ -145,6 +145,7 @@ The Q-learning with exploration algorithm was implemented and tested using World
 </div>
 <h2>Conclustions</h2>
 For all cases, the agent found the optimal policy (best path). We can see that for almost all states the more iterations cause the higher utility values (as expected). For examples with exploration parameter set to 0.2, we can see that the execution time of a q-learning algorithm is higher than for cases with Epsilon=0.05. This is because the agent more often enters the procedure of generating a new state, which lasts longer than the exploitation, which is just taking the value from the array. Using a fixed epsilon value is not a perfect idea. A better idea seems to be using exploration parameter that changes during algorithm work. At the begging of learning about the environment, the probability of selecting a random state should be higher to visit all possible states earlier, then the parameter should be lower to optimise the path. For example, exponential decay can be used. 
+
 ## :memo: License ##
 
 This project is under license from MIT.
