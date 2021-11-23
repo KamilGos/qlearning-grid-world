@@ -1,6 +1,6 @@
 <!-- image -->
 <div align="center" id="top"> 
-  <img src=images/image.png width="500" />
+  <img src=images/idea.png width="400" />
   &#xa0;
 </div>
 
