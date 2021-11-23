@@ -1,8 +1,7 @@
 import numpy as np
-import gym
 import random
-import time
 from tabulate import tabulate
+from tqdm import tqdm
 
 
 class QLearning:
@@ -21,7 +20,7 @@ class QLearning:
         action_map = {v: k for k, v in zip(self.world.actions, [0, 2, 1, 3])}
 
         # Q-learning algorithm
-        for episode in range(num_episodes):
+        for episode in tqdm(range(num_episodes)):
             # initialize new episode params
             state = self.world.stateStartIndex[0]  # start field
             done = False

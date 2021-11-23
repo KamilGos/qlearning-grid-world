@@ -218,22 +218,22 @@ class World:
         plt.axis("off")
 
     def plotUtilities(self, utilities, type):
-        plot1 = plt.figure(figsize=(7,7))
+        plot1 = plt.figure(figsize=(8,8))
         self.plotTemplate()
         iter = 0
         for i in range(self.nCols):
             for j in range(self.nRows, 0, -1):
                 if type == "mdp":
                     if iter + 1 not in self.stateForbiddenIndexes:
-                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=20,
+                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=17,
                                  horizontalalignment='center', verticalalignment='center')
                         plt.title('Markov Decision Problem. Utilities', size=16)
                 elif type == "q":
                     if iter + 1 in self.stateForbiddenIndexes:
-                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=20,
+                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=17,
                                  horizontalalignment='center', verticalalignment='center', color='white')
                     else:
-                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=20,
+                        plt.text(i + 0.5, j - 0.5, str(round(utilities[iter], 4)), fontsize=17,
                                  horizontalalignment='center', verticalalignment='center')
                     plt.title('Q-learning. Utilities', size=16)
 

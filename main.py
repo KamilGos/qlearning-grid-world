@@ -1,5 +1,5 @@
-from Q_learning import QLearning
-from World import World
+from sources.q_learning import QLearning
+from sources.world import World
 from argparse import ArgumentParser
 from time import time, sleep
 
@@ -37,13 +37,13 @@ if __name__ == "__main__":
         world.showWorldValues()
 
         if args.qrun:
-            print("\n\n############## Q-Learning ###############")
+            print("\n ## Q-Learning ##")
             print("Number of iterations: ", args.qiter)
             qlearning = QLearning(world)
             start_time = time()
             qtable = qlearning.qLearning(args.qiter)
             elapsed_time = time() - start_time
-            print("Q-learning time: ", elapsed_time)
+            print("Q-learning time: ", round(elapsed_time, 2))
             print("++ Q-table ++")
             qlearning.printQTableText(qtable)
             q_utilities, q_policy = qlearning.extractUtilitiesAndPolicy(qtable)
